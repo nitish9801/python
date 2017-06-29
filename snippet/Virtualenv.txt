@@ -1,0 +1,33 @@
+Install virtualenv via pip:
+			$ pip install virtualenv
+			
+Create a virtual environment for a project:
+			$ virtualenv my_project
+
+You can also use the Python interpreter of your choice (like python2.7).
+			$ virtualenv -p /usr/bin/python2.7 my_project
+			
+change the interpreter globally with an env variable
+			$ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
+			
+To begin using the virtual environment, it needs to be activated:
+			$ source my_project/bin/activate
+			
+To not install packages that are installed globbally:
+			$ virtualenv --no-site-packages my_project
+			
+To List all dependencies in a file:
+			$ pip freeze > requirements.txt
+			
+To install dependencies from file:
+			$ pip install -r requirements.txt
+			
+Creating your virtualenv instance to specify the Python executable you want to use:
+			virtualenv --python=/usr/bin/python2.6 my_project
+			
+
+VIRTUALENVWRAPPER
+To install:
+			$ pip install virtualenvwrapper
+			$ export WORKON_HOME=~/Envs
+			$ source /usr/local/bin/virtualenvwrapper.sh

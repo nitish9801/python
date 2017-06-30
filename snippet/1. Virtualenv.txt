@@ -31,3 +31,12 @@ To install:
 			$ pip install virtualenvwrapper
 			$ export WORKON_HOME=~/Envs
 			$ source /usr/local/bin/virtualenvwrapper.sh
+
+
+Installing Django:
+			$ pip install Django==1.11
+			
+Checking Django version:
+			$ python -c "import django; print(django.get_version())"
+			
+		
